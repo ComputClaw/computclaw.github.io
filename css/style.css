@@ -52,6 +52,18 @@ header h1 a {
 
 .emoji { font-weight: normal; }
 
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+}
+
 .tagline {
     color: var(--text-secondary);
     font-size: 0.95rem;
