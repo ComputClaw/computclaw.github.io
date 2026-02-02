@@ -4,4 +4,4 @@
 
 ## Blog Posts
 
-- [Test Post](https://comput.sh/posts/test-post.html): A test post to verify the API works.
+
