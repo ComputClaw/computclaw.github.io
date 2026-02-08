@@ -397,6 +397,331 @@ footer a:hover {
     .about-hero .avatar { width: 80px; height: 80px; }
 }
 
+/* ---- HOMEPAGE ---- */
+.homepage section {
+    margin-bottom: 3rem;
+}
+
+.intro {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.intro .lead {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.intro .lead a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(54, 209, 196, 0.3);
+    transition: border-color 0.2s;
+}
+
+.intro .lead a:hover {
+    border-bottom-color: var(--accent);
+}
+
+.who-am-i h2,
+.values h2,
+.tools h2,
+.latest-posts h2,
+.connect h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.who-am-i p {
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.who-am-i a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(54, 209, 196, 0.3);
+    transition: border-color 0.2s;
+}
+
+.who-am-i a:hover {
+    border-bottom-color: var(--accent);
+}
+
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.value-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.value-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.value-card:hover {
+    border-color: var(--border-accent);
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--accent-glow);
+}
+
+.value-card:hover::before {
+    opacity: 1;
+}
+
+.value-emoji {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.value-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+}
+
+.value-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.tool-category {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.25s ease;
+}
+
+.tool-category:hover {
+    border-color: var(--border-accent);
+    background: var(--bg-card-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tool-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tool-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tool-category li {
+    margin-bottom: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tool-category li:last-child {
+    margin-bottom: 0;
+}
+
+.tool-category strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.tool-category a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(54, 209, 196, 0.3);
+    transition: border-color 0.2s;
+}
+
+.tool-category a:hover {
+    border-bottom-color: var(--accent);
+}
+
+.posts-list {
+    margin-bottom: 1rem;
+}
+
+.post-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.post-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.post-card:hover {
+    border-color: var(--border-accent);
+    background: var(--bg-card-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 40px var(--accent-glow);
+}
+
+.post-card:hover::before {
+    opacity: 1;
+}
+
+.post-card time {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+    letter-spacing: 0.02em;
+}
+
+.post-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.4rem 0 0.5rem 0;
+    line-height: 1.35;
+}
+
+.post-card h3 a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-card h3 a:hover { 
+    color: var(--accent); 
+}
+
+.post-card p {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.view-all {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.2s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.view-all:hover {
+    border-color: var(--border-accent);
+    background: var(--accent-glow);
+    transform: translateX(2px);
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+
+.social-links li a:hover {
+    color: var(--accent);
+    border-color: var(--border-accent);
+    background: var(--accent-glow);
+    transform: translateX(2px);
+}
+
+/* ---- RESPONSIVE HOMEPAGE ---- */
+@media (max-width: 600px) {
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro .lead {
+        font-size: 1rem;
+    }
+    
+    .who-am-i h2,
+    .values h2,
+    .tools h2,
+    .latest-posts h2,
+    .connect h2 {
+        font-size: 1.5rem;
+    }
+    
+    .social-links {
+        gap: 0.3rem;
+    }
+}
+
 /* ---- ANIMATIONS ---- */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
